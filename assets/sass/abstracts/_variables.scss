@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Fraunces:wght@400;500;600;700;800;900&display=swap');
+
+// Font Family
+$theme-text-font: "Montserrat", sans-serif;
+$theme-alt-font: "Fraunces", sans-serif;
+
+// Primary
+$theme-background-color: hsl(0, 0%, 100%);
+$theme-background-color-alt: hsl(30, 38%, 92%);
+$theme-primary-color: hsl(158, 36%, 37%);
+$theme-primary-color-alt: darken($theme-primary-color, 5%);
+
+// Neutral
+$theme-neutral-color: hsl(212, 21%, 14%);
+$theme-neutral-color-alt: lighten($theme-neutral-color, 5%);
+$theme-neutral-grayish-color: hsl(228, 12%, 48%);
+
+// Font Size
+$theme-line-height: 150%;
+
+// Breakpoints
+$screen-sm: 36em;       //576px Large smartphones
+$screen-md: 48em;       //768px Small tablets
+$screen-lg: 62em;       //992px Tablets
+$screen-xl: 75em;       //1200px Desktops
+$screen-xxl: 87.5em;    //1400px Large desktops
+$screen-rwd: 41.25em;   //660px Custom device
+
+// Border shadow
+$theme-box-shadow: 0 0.063rem 0.188rem rgba($theme-neutral-color, 0.12),
+    0 0.063rem 0.125rem rgba($theme-neutral-color, 0.24);
+$theme-box-shadow-hover: 0 0.875rem 1.75rem rgba($theme-neutral-color, 0.25),
+    0 0.625rem 0.625rem rgba($theme-neutral-color, 0.22);
