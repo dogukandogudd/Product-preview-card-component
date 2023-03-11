@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Fraunces:wght@400;500;600;700;800;900&display=swap");
+
+body {
+    background: hsl(30deg, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+}
+
+:is(a, button, input, textarea, select, details, summary):focus-visible {
+    outline: hsl(212deg, 21%, 14%) dotted 0.18rem;
+    outline-offset: 0.18rem;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Components */
+.attribution {
+    margin-block: 0.5rem;
+    font-size: 0.735rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(158deg, 36%, 37%);
+}
+
+@media screen and (min-width: 36em) and (min-height: 36.25em) {
+    .attribution {
+        position: fixed;
+        bottom: 0.325rem;
+        width: 100%;
+    }
+}
+
+@media (hover: hover) {
+    .attribution a:hover {
+        color: #3c8067;
+    }
+}
+
+.card-product {
+    background: hsl(0deg, 0%, 100%);
+    box-shadow: 0 0.063rem 0.188rem rgba(28, 35, 43, 0.12), 0 0.063rem 0.125rem rgba(28, 35, 43, 0.24);
+    color: hsl(212deg, 21%, 14%);
+    margin: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 37.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-product__info {
+    padding: 2rem;
+}
+
+.card-product__picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-product__title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 0.95;
+    font-family: "Fraunces", sans-serif;
+    margin-block: 1.2rem;
+}
+
+.card-product__subtitle {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(228deg, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+}
+
+.card-product__description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: hsl(228deg, 12%, 48%);
+    line-height: 1.7;
+}
+
+.card-product__price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-block: 1.4rem;
+    font-family: "Fraunces", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.7rem;
+    color: hsl(158deg, 36%, 37%);
+}
+
+.card-product__old-price {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: hsl(228deg, 12%, 48%);
+}
+
+@media (hover: hover) {
+    .card-product:hover {
+        box-shadow: 0 0.875rem 1.75rem rgba(28, 35, 43, 0.25), 0 0.625rem 0.625rem rgba(28, 35, 43, 0.22);
+    }
+}
+
+@media screen and (min-width: 41.25em) {
+    .card-product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+button.btn {
+    width: 100%;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+    background-color: hsl(158deg, 36%, 37%);
+    font-weight: 700;
+    color: hsl(0deg, 0%, 100%);
+}
+
+@media (hover: hover) {
+    button.btn:hover {
+        background-color: #346f59;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 0.063rem;
+    height: 0.063rem;
+    padding: 0;
+    margin: -0.063rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
